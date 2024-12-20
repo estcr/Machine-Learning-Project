@@ -84,7 +84,6 @@ En resumen, aunque los modelos evaluados tienen un buen rendimiento general, es 
 ## 👨‍💼 Autor
 
 - Esteban Cristos Muzzupappa - [LinkedIn](https://www·linkedin·com/in/esteban-cristos-muzzupappa/)
-- Gerardo Jimenez - [LinkedIn](https://www·linkedin·com/in/gerardo-jimenez/) 
 
 
 👋 **Gracias por visitar este proyecto!** Si tienes preguntas o sugerencias, no dudes en abrir un issue o contactarnos directamente.
