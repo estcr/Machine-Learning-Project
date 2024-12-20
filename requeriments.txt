@@ -8,3 +8,4 @@ plotly
 altair
 pillow
 requests
+joblib
