@@ -3,9 +3,9 @@ import pandas as pd
 import streamlit as st
 
 # Cargar el modelo guardado, el escalador y SMOTE
-model = joblib.load('random_forest_smote_model.pkl')
-scaler = joblib.load('scalerfinal.pkl')
-smote = joblib.load('smotefinal.pkl')
+model = joblib.load(r'random_forest_smote_model.pkl')
+scaler = joblib.load(r'scalerfinal.pkl')
+smote = joblib.load(r'smotefinal.pkl')
 
 # Función para solicitar los datos del paciente
 def get_patient_data():
