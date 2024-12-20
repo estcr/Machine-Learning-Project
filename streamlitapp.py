@@ -76,11 +76,8 @@ elif section == 'Prueba el Modelo':
         # Aplicar el escalador a los datos del paciente
         patient_data_scaled = scaler.transform(patient_data)
 
-        # Aplicar SMOTE a los datos del paciente (esto es inusual y generalmente no se hace)
-        X_resampled, y_resampled = smote.fit_resample(patient_data_scaled, [0])  # Aquí asumimos que la clase es 0 para el nuevo dato
-
         # Realizar predicciones con el modelo cargado
-        prediction = model.predict(X_resampled)
+        prediction = model.predict(patient_data_scaled)
 
         # Mostrar las predicciones
         if prediction[0] == 1:
