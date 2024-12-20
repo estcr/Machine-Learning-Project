@@ -10,13 +10,13 @@ smote = joblib.load(r'smotefinal.pkl')
 # Función para solicitar los datos del paciente
 def get_patient_data():
     data = {}
+    data['gender'] = st.selectbox("¿El paciente es masculino?", options=[0, 1])
     data['age'] = st.number_input("Ingrese la edad del paciente:", min_value=0, max_value=120, value=30)
     data['hypertension'] = st.selectbox("¿El paciente tiene hipertensión?", options=[0, 1])
     data['heart_disease'] = st.selectbox("¿El paciente tiene enfermedad cardíaca?", options=[0, 1])
+    data['ever_married'] = st.selectbox("¿El paciente alguna vez se ha casado?", options=[0, 1])
     data['avg_glucose_level'] = st.number_input("Ingrese el nivel promedio de glucosa del paciente:", min_value=0.0, max_value=300.0, value=100.0)
     data['bmi'] = st.number_input("Ingrese el índice de masa corporal (BMI) del paciente:", min_value=0.0, max_value=100.0, value=25.0)
-    data['gender'] = st.selectbox("¿El paciente es masculino?", options=[0, 1])
-    data['ever_married'] = st.selectbox("¿El paciente alguna vez se ha casado?", options=[0, 1])
     data['work_type_Never_worked'] = st.selectbox("¿El paciente nunca ha trabajado?", options=[0, 1])
     data['work_type_Private'] = st.selectbox("¿El paciente trabaja en el sector privado?", options=[0, 1])
     data['work_type_Self-employed'] = st.selectbox("¿El paciente es autónomo?", options=[0, 1])
