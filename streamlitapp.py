@@ -3,7 +3,7 @@ import pandas as pd
 import streamlit as st
 
 # Cargar el modelo guardado, el escalador y SMOTE
-model = joblib.load(r'random_forest_smote_model.pkl')
+model = joblib.load(r'logistic_regression_smote_model.pkl')
 scaler = joblib.load(r'scalerfinal.pkl')
 smote = joblib.load(r'smotefinal.pkl')
 
